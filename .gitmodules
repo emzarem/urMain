@@ -1,0 +1,6 @@
+[submodule "urGovernor"]
+	path = urGovernor
+	url = git@github.com:emzarem/urGovernor.git
+[submodule "urVision"]
+	path = urVision
+	url = git@github.com:emzarem/urVision.git
