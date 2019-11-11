@@ -15,5 +15,12 @@ catkin_make
 source devel/setup.sh
 ```
 
+Install dependencies.
+```
+# These packages are required for OpenCV libraries and camera operation
+sudo apt-get install ros-melodic-gscam
+sudo apt-get install ros-melodic-image-proc
+```
+
 ## Current Dependencies
 Please see the vision and governor packages for their `package.xml`
