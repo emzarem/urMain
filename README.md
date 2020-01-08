@@ -22,5 +22,15 @@ sudo apt-get install ros-melodic-gscam
 sudo apt-get install ros-melodic-image-proc
 ```
 
+On target, need to compile copy of cv_bridge in workspace (to use GPU accelerated OpenCV libraries)
+```
+cd <catkin_ws>/src
+git clone git@github.com:ros-perception/vision_opencv.git
+cd ..
+export CMAKE_PREFIX_PATH=/usr/local:$CMAKE_PREFIX_PATH
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+catkin_make
+```
+
 ## Current Dependencies
 Please see the vision and governor packages for their `package.xml`
