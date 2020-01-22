@@ -32,5 +32,18 @@ export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 catkin_make
 ```
 
+## Connecting to Target
+To connect with target, need to set ip addr of target on host PC (i.e. PC running Ubuntu + ROS). Can use provided script as shown below, replace with proper ip address.
+
+```
+source set_ros_params.sh 10.36.20.243
+```  
+
+** On target, also need to set value of ROS_IP **
+```
+export ROS_IP=10.36.20.243
+```
+
+
 ## Current Dependencies
 Please see the vision and governor packages for their `package.xml`
